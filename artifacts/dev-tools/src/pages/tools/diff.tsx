@@ -1,5 +1,5 @@
-import { useState } from "react";
-import { ToolLayout } from "@/components/tool-layout";
+import { useState, useMemo } from "react";
+import { ToolLayout, CopyButton } from "@/components/tool-layout";
 import { Textarea } from "@/components/ui/textarea";
 import { Label } from "@/components/ui/label";
 import { diffWordsWithSpace, diffLines } from "diff";

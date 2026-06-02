@@ -10,6 +10,7 @@ export function useCopyToClipboard() {
       const timer = setTimeout(() => setIsCopied(false), 2000);
       return () => clearTimeout(timer);
     }
+    return undefined;
   }, [isCopied]);
 
   const copyToClipboard = useCallback(
